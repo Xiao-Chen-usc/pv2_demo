@@ -48,7 +48,7 @@ export default function CoreConcepts() {
 
   return (
     <section id="core-concepts">
-      <h2>Core Concepts</h2>
+      <h2>AI powered PV2 copilot</h2>
       <div>
         <label htmlFor="s3Data">S3 Data:</label>
         <input type="text" id="s3Data" name="s3_data" value={formData.s3_data} onChange={handleChange} />
@@ -72,7 +72,7 @@ export default function CoreConcepts() {
       {outputData && (
         <div>
           <h3>API Response:</h3>
-          <div style={{ maxHeight: '200px', overflowY: 'auto' }}>
+          <div style={{ maxHeight: '600px', overflowY: 'auto', whiteSpace: 'pre-wrap', wordBreak: 'break-all' }}>
             <pre>{outputData}</pre>
           </div>
         </div>
